@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Task Project</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Task Board</h1>
+    </div>
+
+    <div class="notebook">
+        <textarea id="note-text-input" rows="5" placeholder="Task Description"></textarea>
+        <span> To do By:
+            <input id="date-input" type="datetime-local" \>
+        </span>
+        <form>
+            <button type="button" id="save" onclick="onSaveClicked()">Save</button>
+            <button type="button" id="reset" onclick="cleanInputs()">Clean</button>
+        </form>
+    </div>
+
+    <div id="notes-area" class="notes-area"></div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
